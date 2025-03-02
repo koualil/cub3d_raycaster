@@ -1,4 +1,5 @@
-#include "cub3D.h"
+#include "../include/cub3D.h"
+
 
 int	extension_check(char *file_name)
 {

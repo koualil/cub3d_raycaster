@@ -1,4 +1,5 @@
-#include "cub3D.h"
+#include "../include/cub3D.h"
+
 
 static void	verify_texture(t_param *param, char *path, enum e_param_type type)
 {

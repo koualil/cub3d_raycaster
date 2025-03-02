@@ -1,4 +1,4 @@
-#include "cub3D.h"
+#include "../include/cub3D.h"
 
 static int	utils(t_lst *tmp, int i)
 {

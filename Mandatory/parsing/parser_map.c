@@ -1,4 +1,5 @@
-#include "cub3D.h"
+#include "../include/cub3D.h"
+
 
 static void	find_max_size(t_lst *lst, int *size)
 {

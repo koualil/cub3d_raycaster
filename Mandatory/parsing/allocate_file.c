@@ -1,4 +1,4 @@
-#include "cub3D.h"
+#include "../include/cub3D.h"
 
 static void	allocate_file_content_utils(t_lst *lst_tmp)
 {

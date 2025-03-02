@@ -1,5 +1,5 @@
-#include "MLX42/MLX42.h"
-#include "cub3D.h"
+#include <MLX42.h>
+#include "../include/cub3D.h"
 
 static void	load_png(t_text *texture, t_param *param)
 {

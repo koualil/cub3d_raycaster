@@ -1,4 +1,5 @@
-#include "cub3D.h"
+
+#include "../include/cub3D.h"
 
 // static int	check_collisions(t_data *data, double mov_ang)
 // {

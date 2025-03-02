@@ -1,7 +1,7 @@
 #ifndef CUB3D_H
 # define CUB3D_H
 
-# include <MLX42/MLX42.h>
+# include <MLX42.h>
 # include <fcntl.h>
 # include <math.h>
 # include <stdio.h>
@@ -9,6 +9,8 @@
 # include <unistd.h>
 
 # define BUFFER_SIZE 10
+# define TILE_SIZE 40
+# define FOV  60
 
 enum				e_param_type
 {
@@ -112,6 +114,14 @@ typedef struct s_img
 	mlx_image_t		*east;
 	mlx_image_t		*west;
 }					t_img;
+typedef struct s_player
+{
+	int		p_x;
+	int		p_y;
+	float 	fov_rd;
+	double	angle;
+	double 	ray_angel;
+}				t_player;
 
 typedef struct s_data
 {
@@ -119,9 +129,19 @@ typedef struct s_data
 	mlx_image_t		*image;
 	t_param			*param;
 	double			player_angle;
+	// double 			ray_angel;
+	double			ray_distance;
+	int				was_hit_virtical;
 	t_img			*texture;
 	int				width;
 	int				height;
+	t_player		player;
+	t_vec2f			vwall;
+	t_vec2f			hwall;
+	int			up;
+	int			down;
+	int			right;
+	int			left;
 }					t_data;
 
 t_data				init_data(char *path);

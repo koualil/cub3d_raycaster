@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "cub3D.h"
+#include "../include/cub3D.h"
 
 void	fd_putstr(const char	*str, int fd)
 {
